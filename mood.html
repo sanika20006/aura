@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Tracker - Aura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container dashboard">
+    <h1>🌤 Mood Tracker</h1>
+
+    <div class="card">
+        <select id="mood">
+            <option value="">Select Mood</option>
+            <option value="Happy">Happy</option>
+            <option value="Calm">Calm</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Anxious">Anxious</option>
+            <option value="Sad">Sad</option>
+        </select>
+
+        <br><br>
+
+        <label>Intensity: <span id="levelValue">3</span></label>
+        <input type="range" id="level" min="1" max="5" value="3">
+
+        <br><br>
+
+        <button id="saveBtn">Save Mood</button>
+
+        <br><br>
+
+        <!-- Quote Area -->
+        <div id="quote" style="
+            background: rgba(255,255,255,0.1);
+            padding:15px;
+            border-radius:10px;
+            display:none;
+        "></div>
+    </div>
+
+    <div class="card">
+        <h2>📊 Weekly Mood Graph</h2>
+        <canvas id="chart"></canvas>
+    </div>
+
+    <div class="card" onclick="window.location.href='dashboard.html'">
+        ⬅ Back to Dashboard
+    </div>
+</div>
+
+<script>
+
+// Show slider value
+const slider = document.getElementById("level");
+const levelValue = document.getElementById("levelValue");
+
+slider.addEventListener("input", function(){
+    levelValue.innerText = slider.value;
+});
+
+// Save mood
+document.getElementById("saveBtn").addEventListener("click", function(){
+
+    const mood = document.getElementById("mood").value;
+    const intensity = slider.value;
+
+    if(mood === ""){
+        alert("Please select a mood");
+        return;
+    }
+
+    const today = new Date().toLocaleDateString();
+
+    const entry = {
+        date: today,
+        mood: mood,
+        intensity: parseInt(intensity)
+    };
+
+    let moods = JSON.parse(localStorage.getItem("moods")) || [];
+    moods.push(entry);
+    localStorage.setItem("moods", JSON.stringify(moods));
+
+    showQuote(mood);
+    loadChart();
+});
+
+// Quote function
+function showQuote(mood){
+
+    const quotes = {
+        Happy: "Keep spreading your light.",
+        Calm: "Peace is your power.",
+        Neutral: "Every day is a fresh start.",
+        Anxious: "Breathe slowly. You are safe.",
+        Sad: "This feeling is temporary. Stay strong."
+    };
+
+    const quoteBox = document.getElementById("quote");
+    quoteBox.innerText = quotes[mood];
+    quoteBox.style.display = "block";
+}
+
+// Load chart
+function loadChart(){
+
+    const moods = JSON.parse(localStorage.getItem("moods")) || [];
+    const last7 = moods.slice(-7);
+
+    const labels = last7.map(e => e.date);
+    const data = last7.map(e => e.intensity);
+
+    const ctx = document.getElementById("chart").getContext("2d");
+
+    if(window.myChart){
+        window.myChart.destroy();
+    }
+
+    window.myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Mood Intensity",
+                data: data,
+                tension: 0.4
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    min: 1,
+                    max: 5
+                }
+            }
+        }
+    });
+}
+
+// Load chart when page opens
+window.onload = loadChart;
+
+</script>
+
+</body>
+</html>

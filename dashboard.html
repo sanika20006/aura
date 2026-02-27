@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Aura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <div id="burnoutAlert" style="
+    display:none;
+    background: linear-gradient(135deg, #ff4e50, #f00000);
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    animation: pulse 2s infinite;
+">
+    <h2>⚠ Burnout Risk Detected</h2>
+    <p>You may be under emotional strain. Consider rest or self-care.</p>
+</div>
+
+    <h1 id="welcome" class="dashboard-title"></h1>
+
+    <!-- GRID SECTION -->
+    <div class="grid">
+
+        <!-- Mood Tracker -->
+        <div class="feature-card mood-card" onclick="window.location.href='mood.html'">
+            <div class="icon">😊</div>
+            <h2>Mood Tracker</h2>
+            <p id="moodIndicator">Today's Mood: --</p>
+        </div>
+<!-- Daily Tasks Expandable -->
+<div class="feature-card task-card" id="taskCard">
+
+    <div class="task-header" onclick="toggleTaskPanel()">
+        <div class="icon">✅</div>
+        <h2>Daily Tasks</h2>
+        <span id="arrow">▼</span>
+    </div>
+
+    <div class="task-panel" id="taskPanel">
+
+        <input type="text" id="taskInput" placeholder="Add new task..."
+            class="task-input">
+
+        <button onclick="addTask()" class="task-btn">Add Task</button>
+
+        <ul id="taskList" class="task-list"></ul>
+
+        <div class="progress-container">
+            <div class="progress-bg">
+                <div id="progressBar" class="progress-fill"></div>
+            </div>
+            <p id="progressText">0% Completed</p>
+       </div>
+
+
+        <!-- Journal -->
+        <div class="feature-card journal-card" onclick="window.location.href='journal.html'">
+            <div class="icon">🖊️</div>
+            <h2>Gratitude Journal</h2>
+            <p>Reflect & grow daily</p>
+        </div>
+
+        <!-- Self Care -->
+        <div class="feature-card chatbot-card" onclick="window.location.href='selfcare.html'">
+            <div class="icon">🧘</div>
+            <h2>Self Care Tools</h2>
+            <p>Breathing & checklist</p>
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
