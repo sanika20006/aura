@@ -2,27 +2,61 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [AURA] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [wizaed]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Saniga santhosh] - [College of engineering thalashery]
+- Member 2: [Sneha pv] - [College of engineering thalashery]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[You said:
+Uploaded image
+Uploaded image
+Uploaded image
+Uploaded image
+Uploaded image
+In this format  make a copy paste  for read me https://sanika20006.github.io/aura/
+
+ChatGPT said:
+Here is your copy-paste ready README.md in the same format as the template you showed 👇
+
+You can directly paste this into your README.md file on GitHub.
+
+🌸 Aura – Your Personal Wellness Companion
+Basic Details
+Team Name: Aura
+Team Members
+Sanika Santhosh – [Your College Name]
+
+[Member 2 Name] – [College Name]
+
+Hosted Project Link
+🔗 https://sanika20006.github.io/aura/
 
 ### Project Description
-[2-3 lines about what your project does]
+[Aura is a simple and user-friendly mental wellness web app designed to help users track their mood, maintain a journal, manage daily tasks, and practice self-care.
+It encourages emotional awareness and productivity in one organized platform.]
 
 ### The Problem statement
-[What problem are you solving?]
+[Many students struggle with stress, anxiety, mood swings, and poor time management.
+There is no single simple platform that combines mood tracking, journaling, task management, and self-care in one place.]
 
 ### The Solution
-[How are you solving it?]
+[Aura provides an all-in-one mental wellness dashboard where users can:
+
+Track daily mood patterns
+
+Write personal journal entries
+
+Organize daily tasks
+
+Follow self-care activities
+
+This helps improve emotional awareness, productivity, and mental well-being]
 
 ---
 
@@ -31,10 +65,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [HTML, CSS, JavaScript]
+- Frameworks used: [None (Pure Frontend Web App)]
+- Libraries used: [ LocalStorage API]
+- Tools used: [VS Code, Git, GitHub Pages]
 
 **For Hardware:**
 - Main components: [List main components]
@@ -46,10 +80,10 @@
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [Mood Tracker – Record and visualize daily emotions]
+- Feature 2: [Journal – Write and save personal thoughts securely]
+- Feature 3: [Task Manager – Add, delete, and manage daily tasks]
+- Feature 4: [Self-Care Section – Suggestions to improve mental health]
 
 ---
 
@@ -59,22 +93,13 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+[No installation required.
+Simply open the hosted link in any web browser]
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
-```
-
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
+[Open the project link]
 ---
 
 ## Project Documentation
