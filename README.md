@@ -387,7 +387,12 @@ python script.py -v --format json data.json
 ###
 [Videohttps://drive.google.com/file/d/1VBCXMi6KZUkQQqnQQXq6mQS3bimV-pQ1/view?usp=drive_link]
 
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+User opens site → Login/Signup
+Redirect to Dashboard
+Add or view Mood, Tasks, Journal
+Check Insights / Reports
+Receive Reminders & Notifications
+Customize Settings as needed
 
 ### Additional Demos
 [Add any extra demo materials/links - Live site, APK download, online demo, etc.]
