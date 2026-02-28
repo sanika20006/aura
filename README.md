@@ -120,7 +120,7 @@ Simply open the hosted link in any web browser]
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.jpeg)
+![Architecture Diagram](architecture.jpeg)
 *Explain your system architecture - components, data flow, tech stack interaction*
 
 **Application Workflow:**
