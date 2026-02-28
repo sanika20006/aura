@@ -107,13 +107,13 @@ Simply open the hosted link in any web browser]
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1)<img src="./'login page.jpeg'" alt="Project Banner" width="100%">
+![Screenshot1)<img src="./'loginpage.jpeg'" alt="Project Banner" width="100%">
 *Add caption explaining what this shows*
 
-![Screenshot2]<img src="./'home page.jpeg'" alt="Project Banner" width="100%">
+![Screenshot2]<img src="./'homepage.jpeg'" alt="Project Banner" width="100%">
 *Add caption explaining what this shows*
 
-![Screenshot3]()<img src="./'mood tracker page.jpeg'" alt="Project Banner" width="100%">
+![Screenshot3]()<img src="./'moodtrackerpage.jpeg'" alt="Project Banner" width="100%">
 *Add caption explaining what this shows*
 
 #### Diagrams
