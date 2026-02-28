@@ -4,9 +4,9 @@
 
 # [AURA] 🎯
 
-## Basic Details
+your personal companion for mental health
 
-### Team Name: [wizaed]
+### Team Name: [wizard]
 
 ### Team Members
 - Member 1: [Saniga santhosh] - [College of engineering thalashery]
